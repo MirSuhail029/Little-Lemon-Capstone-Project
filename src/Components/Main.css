@@ -1,0 +1,83 @@
+main{
+    margin: 40px 0;
+    min-height: 70vh;
+}
+
+.banner{
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    background-image: url("../Assets/restaurant.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.banner > div{
+    position: relative;
+    z-index: 2;
+}
+.banner p{
+    font-weight: bold;
+    color: white;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+    color: #F4CE14;
+}
+h1 span{
+    font-size: 2rem;
+}
+
+.articles{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .articles{
+        flex-direction: column;
+    }
+}
+article{
+    flex: 1;
+    background-color: bisque;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+}
+article img{
+    min-height: 220px;
+    object-fit: cover;
+}
+article h2{
+    margin: 20px 0;
+}
+article p{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+article span{
+    color:#F4CE14;
+    font-size: 17px;
+    display: block;
+    margin-top: 10px;
+}
+article a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}

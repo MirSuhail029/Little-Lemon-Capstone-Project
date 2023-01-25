@@ -1,0 +1,35 @@
+#navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: 15px;
+    background-color: darkslategrey;
+    height: 70px;
+}
+#navigation li{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+#navigation li:after{
+    content: '';
+    display: block;
+    width: 0;
+    left: 50%;
+    position: relative;
+    height: 2px;
+    transition: all 0.2s;
+    background-color: #fff;
+}
+#navigation li:hover:after{
+    left: 0;
+    width: 100%;
+}
+#navigation li a{
+    color: #fff;
+    text-decoration: none;
+}
